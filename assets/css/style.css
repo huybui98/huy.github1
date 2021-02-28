@@ -3,6 +3,7 @@
 
 /* ===== BASE CSS ===== */
 :root {
+    --primary-color: #5361FF;
     --white-color: #FAFAFF;
     --dark-color: #2A3B47;
     --text-color: #697477;
@@ -11,27 +12,133 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 html {
     scroll-behavior: smooth;
+}
+.container {
+    max-width: 1024px;
+    margin: auto;
 }
 ul {
     list-style: none;
 }
 a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--white-color);
 }
 
 /* ===== HEADER ===== */
+.header {
+    display: fixed;
+    background-color: var(--primary-color);
+}
+.nav {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: auto; */
+}
+.nav__name {
 
-
+}
+.nav__menu {
+    width: 40%;
+}
+.nav__list {
+    display: flex;
+    justify-content: space-around;
+}
 /* ====== HOME ===== */
+.main {
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+}
+.home {
+    position: relative;
+    padding-top: 50px;
+    height:calc(100vh - 64px);
+    display: flex;
+    justify-content: space-between;
 
+}
+.home__container {
+    width: 50%;
+    text-align: center;
+    line-height: 80px;
+    position: absolute;
+    bottom: 33%;
+}
+.home__title {
+    color: var(--white-color);
+    font-size: 70px;
+}
+.home__icon {
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+.home__icon a {
+    font-size: 45px;
+    margin-right: 20px;
+}
+.home__img {
+    position: absolute;
+    right: 0;
+    bottom: 15%;
+    border-radius: 40%;
+    height: 459px;
+}
 
 /* ===== ABOUT ===== */
+.about {
+    height: 520px;
+    padding-top: 60px;
+    background-color: var(--white-color);
+}
+.about__title {
+    color: var(--dark-color);
+    text-align: center;
+    font-size: 32px;
+    position: relative;
+}
 
+.about__container {
+    margin: auto;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+
+}
+.about__container div {
+    width: 50%;
+}
+.about__img {
+    width: 50%;
+    text-align: center;
+}
+.about__img-img {
+    max-width: 100%;
+    border-radius: 50%;
+    height: 300px;
+}
+.about__subtitle {
+    color: var(--primary-color);
+    font-size: 32px;
+    padding-bottom: 15px;
+}
+.about__text {
+    color: #788284;
+    padding-bottom: 35px;
+}
+.about__icon a {
+    font-size: 32px;
+    color: var(--dark-color);
+    margin-right: 15px;
+}
 /* ===== SKILLS ===== */
 
 /* ===== CONTACT ===== */
