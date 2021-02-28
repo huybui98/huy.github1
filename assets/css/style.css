@@ -1,0 +1,39 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+
+/* ===== BASE CSS ===== */
+:root {
+    --white-color: #FAFAFF;
+    --dark-color: #2A3B47;
+    --text-color: #697477;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* ===== HEADER ===== */
+
+
+/* ====== HOME ===== */
+
+
+/* ===== ABOUT ===== */
+
+/* ===== SKILLS ===== */
+
+/* ===== CONTACT ===== */
+
+/* ===== FOOTER ===== */
